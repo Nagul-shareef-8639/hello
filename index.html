@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oak & Craft - Wood Work Company</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="site-header" id="header">
+    <nav class="navbar container" id="navbar">
+      <a href="#home" class="brand">
+        <span class="logo-icon">🪵</span>
+        <span>Oak & Craft</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="theme-switcher" id="theme-switcher" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content container">
+        <span class="eyebrow">Fine Wood Craftsmanship</span>
+        <h1>Build Your Dream Space with Precision Woodworking</h1>
+        <p>Premium cabinetry, bespoke furniture, and custom wood fixtures crafted for modern homes and businesses.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" id="cta-button">Schedule a Consultation</a>
+          <a href="#projects" class="btn btn-secondary">View Projects</a>
+        </div>
+        <div class="typing-text" id="typing-text"></div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container section-grid">
+        <div class="section-image about-image"></div>
+        <div>
+          <h2>About Oak & Craft</h2>
+          <p>Oak & Craft is a modern woodworking studio dedicated to creating beautifully finished wood products with exceptional attention to detail.</p>
+          <ul class="about-list">
+            <li>Custom furniture design</li>
+            <li>Handcrafted cabinetry</li>
+            <li>High-quality material sourcing</li>
+          </ul>
+          <a href="#services" class="btn btn-primary">See Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span>Our Services</span>
+          <h2>Woodwork Tailored to Your Needs</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Custom Furniture</h3>
+            <p>Designed and built to fit your vision, with sustainable woods and modern finishes.</p>
+          </article>
+          <article class="service-card">
+            <h3>Cabinetry</h3>
+            <p>Kitchen, bathroom and storage solutions with durable joinery and elegant details.</p>
+          </article>
+          <article class="service-card">
+            <h3>Wood Renovation</h3>
+            <p>Repair, refinish and update existing woodwork to restore warmth and character.</p>
+          </article>
+          <article class="service-card">
+            <h3>Commercial Fitouts</h3>
+            <p>Professional shopfitting, hospitality, and office joinery with fast delivery.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span>Gallery</span>
+          <h2>Explore Our Craftwork</h2>
+        </div>
+        <div class="filter-group" id="filter-group">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="furniture">Furniture</button>
+          <button class="filter-btn" data-filter="cabinetry">Cabinetry</button>
+          <button class="filter-btn" data-filter="fixtures">Fixtures</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid">
+          <article class="gallery-item" data-category="furniture">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Custom wood furniture" />
+            <div class="gallery-overlay">Custom Furniture</div>
+          </article>
+          <article class="gallery-item" data-category="cabinetry">
+            <img src="https://images.unsplash.com/photo-1475556712451-4f7b0b0f530d?auto=format&fit=crop&w=900&q=80" alt="Modern cabinetry" />
+            <div class="gallery-overlay">Kitchen Cabinetry</div>
+          </article>
+          <article class="gallery-item" data-category="fixtures">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=80" alt="Wooden fixtures" />
+            <div class="gallery-overlay">Decorative Fixtures</div>
+          </article>
+          <article class="gallery-item" data-category="furniture">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Wood home furniture" />
+            <div class="gallery-overlay">Living Room Set</div>
+          </article>
+          <article class="gallery-item" data-category="cabinetry">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Wooden cabinets" />
+            <div class="gallery-overlay">Bathroom Cabinets</div>
+          </article>
+          <article class="gallery-item" data-category="fixtures">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80" alt="Wood fixtures" />
+            <div class="gallery-overlay">Custom Shelves</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span>Projects</span>
+          <h2>Featured Woodworking Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Heritage Dining Table</h3>
+            <p>Solid oak dining table with hand-rubbed finish and sculpted legs.</p>
+          </article>
+          <article class="project-card">
+            <h3>Minimal Office Storage</h3>
+            <p>Custom storage cabinets with soft-close doors and hidden drawers.</p>
+          </article>
+          <article class="project-card">
+            <h3>Luxury Shop Fitout</h3>
+            <p>Retail display units and counters crafted for a modern boutique.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span>Testimonials</span>
+          <h2>Customer Reviews</h2>
+        </div>
+        <div class="testimonial-slider" id="testimonial-slider">
+          <article class="testimonial-card active">
+            <p>"Oak & Craft transformed our kitchen with beautiful cabinetry. The team was professional and detail-oriented."</p>
+            <h4>Anna Reed</h4>
+            <span>Homeowner</span>
+          </article>
+          <article class="testimonial-card">
+            <p>"The custom furniture exceeded expectations. It feels warm, sturdy, and unique in our living space."</p>
+            <h4>Marco Silva</h4>
+            <span>Interior Designer</span>
+          </article>
+          <article class="testimonial-card">
+            <p>"A seamless experience from design to delivery. Their attention to finish and installation was excellent."</p>
+            <h4>Nina Patel</h4>
+            <span>Restaurant Owner</span>
+          </article>
+        </div>
+        <div class="testimonial-controls">
+          <button class="slider-btn" id="prev-testimonial">Prev</button>
+          <button class="slider-btn" id="next-testimonial">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container section-grid">
+        <div>
+          <h2>Contact Us</h2>
+          <p>Ready to start your woodworking project? Send us a message and our team will reply within 24 hours.</p>
+          <div class="contact-info">
+            <div><strong>Phone:</strong> +1 (555) 123-4567</div>
+            <div><strong>Email:</strong> hello@oakandcraft.com</div>
+            <div><strong>Location:</strong> 84 Timber Lane, Woodsville</div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+
+          <label for="service">Service</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option value="furniture">Custom Furniture</option>
+            <option value="cabinetry">Cabinetry</option>
+            <option value="renovation">Renovation</option>
+            <option value="commercial">Commercial Fitouts</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-feedback" id="form-feedback"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Oak & Craft</h3>
+        <p>Modern woodworking that brings warmth and refined style to every space.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Oak & Craft. All rights reserved.</p>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
